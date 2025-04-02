@@ -26,7 +26,7 @@ circleButton.addEventListener('click', () => {
     const capturedImage = canvas.toDataURL('image/jpeg');
 
     // Send the image to the Flask backend
-    fetch('http://127.0.0.1:5000/classify', {
+    fetch('https://pasta-classifier-41395746896.europe-west1.run.app', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ image: capturedImage })
