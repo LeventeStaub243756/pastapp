@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="arrabbiata.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+  	  	
+</head>
+<body>
+<div class="penne">
+    <!-- Arrabbiata Card -->
+    <div class="card">
+        <div class="card-title">Arrabbiata Sauce</div>
+        <div class="logo-intro">
+            <img src="images/chili.png" alt="chili">
+            <div class="intro">The spicy roman classic</div>
+        </div>
+    
+        <div class="info-1-container">
+            <p class="info-1-title">Why it’s perfect for penne</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>Ridged surface grips the sauce for maximum flavor.</span>
+                </li>
+                <li class="info-1-description">
+                <span>Hollow shape traps the spicy tomato goodness, ensuring every bite is coated.</span>
+                </li>
+                <li class="info-1-description">
+                <span>Traditional Roman pairing—Penne all’Arrabbiata is a staple in Lazio cuisine.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="info-1-container">
+            <p class="info-1-title">Regional connection</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>Originating in Rome, Italy, Arrabbiata (meaning "angry" in Italian) is beloved for its simple yet bold flavors. It’s a dish deeply tied to Roman culinary tradition.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="info-1-container">
+            <p class="info-1-title">Pro Tip – How to Enjoy It Best</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>🔥 Pair with grated Pecorino Romano for extra umami.</span>
+                </li>
+                <li class="info-1-description">
+                <span>🍷 Best served with a glass of Chianti to balance the spice.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+    </div>
+</div>
+<script>
+    var MapIcon = document.getElementById("icon-tomato");
+    
+    if (MapIcon) {
+        MapIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "penne.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

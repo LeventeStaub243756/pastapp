@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="penne.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+<div class="fusilli">
+    <div class="fusilli1">Fusilli</div>
+    <img class="fusilli-icon" alt="" src="images/fusilli.png" style="width: 200px;height: 200px;">
+    <div class="sauce-pairings">Sauce Pairings</div>
+    <div class="sauce-cards">
+        <!-- Arrabbiata Card -->
+        <div class="card" id="Pesto-card">
+            <div class="card-title">Pesto alla Genovese</div>
+            <div class="card-content">
+	    		<img src="images/pesto.png" alt="Chili" />
+                <div class="card-description">
+                    A vibrant, herby sauce from Liguria, bursting with fresh basil, garlic, and rich olive oil.
+                </div>
+            </div>
+        </div>
+        <!-- Pesto ala Trapense Card -->
+        <div class="card" id="Mushroom-card">
+            <div class="card-title">Creamy Mushroom sauce</div>
+            <div class="card-content">
+	    		<img src="images/mushroom.png" alt="Pesto" />
+                <div class="card-description">
+                    A rich, velvety sauce that blends earthy mushrooms with creamy indulgence for a comforting bite.                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+        <div class="icon2" id="icon-map">
+			<img class="map-icon" alt="" src="images/map.png">
+		</div>
+    </div>
+    </div>
+</div>
+<script>
+    var MapIcon = document.getElementById("icon-map");
+    var MushroomIcon = document.getElementById("Mushroom-card")
+    var PestoIcon = document.getElementById("Pesto-card")
+
+    if (MapIcon) {
+        MapIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 400ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "fusilli_origin.html";
+            }, 400); // Wait for animation to complete before redirecting
+        });
+    }
+    if (PestoIcon) {
+        PestoIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "pesto.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+    if (MushroomIcon) {
+        MushroomIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "mushroom.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

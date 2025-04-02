@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="penne_origin.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+</head>
+<body>
+<div class="penne">
+    <div class="penne1">Spaghetti</div>
+    <img class="penne-icon" alt="" src="images/italy_map_spaghetti.png" style="mix-blend-mode: darken;">
+    <div class="sauce-cards">
+        <!-- Penne origins card -->
+        <div class="card">
+            <div class="card-title">Spaghetti origins</div>
+            <div class="card-content">
+                <div class="card-description">
+                    Few pastas are as universally recognized as spaghetti. With its long, thin strands, it has been a staple of Italian cuisine for centuries, evolving from early pasta traditions in Sicily and Southern Italy. While often linked to Naples, where it gained widespread popularity, spaghetti’s versatility made it a favorite across regions.
+In the 19th century, Naples became the heart of dried pasta production, perfecting spaghetti’s firm texture and ability to hold sauces. Over time, it became the foundation for many of Italy’s most famous dishes, from simple Cacio e Pepe to rich, hearty Amatriciana.
+Today, spaghetti remains a symbol of Italian culinary tradition, proving that simplicity and quality ingredients create timeless perfection. 🍝
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+        <div class="icon2">
+			<img class="map-icon" alt="" src="images/map.png">
+		</div>
+    </div>
+</div>
+<script>
+    var tomatoSauceIcon = document.getElementById("icon-tomato");
+    
+    if (tomatoSauceIcon) {
+        tomatoSauceIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 400ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "spaghetti.html";
+            }, 400); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

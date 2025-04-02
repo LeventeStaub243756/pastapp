@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="penne_origin.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+</head>
+<body>
+<div class="penne">
+    <div class="penne1">Fusilli</div>
+    <img class="penne-icon" alt="" src="images/italy_map_fusilli.png" style="mix-blend-mode: darken;">
+    <div class="sauce-cards">
+        <!-- Penne origins card -->
+        <div class="card">
+            <div class="card-title">Fusilli origins</div>
+            <div class="card-content">
+                <div class="card-description">
+                    <p>✨ Born in Southern Italy, Fusilli is a pasta with a twist—literally! Originally crafted by rolling pasta dough around thin rods, its spring-like shape was inspired by the spinning spindles used in traditional Italian weaving.</p>
+                    <p>🍽️ From rustic kitchens in Campania to modern plates worldwide, Fusilli remains a favorite for sauces that need a pasta with grip. Whether it's creamy ricotta, rich tomato, or fragrant pesto, this pasta locks in flavor, ensuring every forkful is a delight.</p>
+                    <p>💡 Did You Know? In some regions, Fusilli is still hand-rolled into long spirals, giving it a unique, artisanal feel!</p></div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+        <div class="icon2">
+			<img class="map-icon" alt="" src="images/map.png">
+		</div>
+    </div>
+</div>
+<script>
+    var tomatoSauceIcon = document.getElementById("icon-tomato");
+    
+    if (tomatoSauceIcon) {
+        tomatoSauceIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 400ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "fusilli.html";
+            }, 400); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

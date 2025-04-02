@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="arrabbiata.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+  	  	
+</head>
+<body>
+<div class="penne">
+    <!-- Amatriciana Card -->
+    <div class="card">
+        <div class="card-title">Amatriciana Sauce</div>
+        <div class="logo-intro">
+            <img src="images/bacon.png" alt="bacon" style="width: 150px; rotate: -45deg;">
+            <div class="intro">The smoky Roman Classic</div>
+        </div>
+    
+        <div class="info-1-container">
+            <p class="info-1-title">Why it’s perfect for spaghetti</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>Spaghetti’s smooth strands allow the rich, tomato-based sauce to cling evenly.</span>
+                </li>
+                <li class="info-1-description">
+                <span>Guanciale’s fat coats the pasta, ensuring deep, savory flavor in every bite.</span>
+                </li>
+                <li class="info-1-description">
+                <span>The acidity of tomatoes balances the richness of guanciale and Pecorino Romano.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="info-1-container">
+            <p class="info-1-title">Regional connection</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>Originating in Amatrice, this dish became a Roman staple, evolving from pasta alla gricia with the later addition of tomatoes. Today, it’s one of the most famous pasta dishes in Lazio.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="info-1-container">
+            <p class="info-1-title">Pro Tip – How to Enjoy It Best</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>🥓Always use guanciale for authenticity—pancetta or bacon just won’t cut it!</span>
+                </li>
+                <li class="info-1-description">
+                <span>❌ No onions or garlic! The richness comes from guanciale, not extra aromatics.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+    </div>
+</div>
+<script>
+    var MapIcon = document.getElementById("icon-tomato");
+    
+    if (MapIcon) {
+        MapIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "spaghetti.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

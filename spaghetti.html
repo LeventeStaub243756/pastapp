@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="penne.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+<div class="spaghetti">
+    <div class="spaghetti1">Spaghetti</div>
+    <img class="spaghetti-icon" alt="" src="images/spaghetti.png" style="width: 300px;height: 300px;">
+    <div class="sauce-pairings">Sauce Pairings</div>
+    <div class="sauce-cards">
+        <!-- Amatriciana Card -->
+        <div class="card" id="Amatriciana-card">
+            <div class="card-title">Amatriciana sauce</div>
+            <div class="card-content">
+	    		<img src="images/bacon.png" alt="Bacon" style="rotate: -45deg"/>
+                <div class="card-description">
+                    A bold Roman classic with guanciale, tomatoes, and Pecorino Romano.
+                </div>
+            </div>
+        </div>
+        <!-- Cacio e Pepe -->
+        <div class="card" id="CaPe-card">
+            <div class="card-title">Cacio e pepe</div>
+            <div class="card-content">
+	    		<img src="images/pesto.png" alt="Pesto" />
+                <div class="card-description">
+                    A simple yet powerful Roman dish with Pecorino Romano and black pepper.                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+        <div class="icon2" id="icon-map">
+			<img class="map-icon" alt="" src="images/map.png">
+		</div>
+    </div>
+    </div>
+</div>
+<script>
+    var MapIcon = document.getElementById("icon-map");
+    var AmatricianaIcon = document.getElementById("Amatriciana-card")
+    var CaPeIcon = document.getElementById("CaPe-card")
+
+    if (MapIcon) {
+        MapIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 400ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "spaghetti_origin.html";
+            }, 400); // Wait for animation to complete before redirecting
+        });
+    }
+    if (AmatricianaIcon) {
+        AmatricianaIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "amatriciana.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+    if (CaPeIcon) {
+        CaPeIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "cape.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

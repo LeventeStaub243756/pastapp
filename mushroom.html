@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="arrabbiata.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+  	  	
+</head>
+<body>
+<div class="penne">
+    <!-- Pesto card -->
+    <div class="card">
+        <div class="card-title">Creamy Mushroom sauce</div>
+        <div class="logo-intro">
+            <img src="images/mushroom.png" alt="pesto" style="width: 130px; height: 130px;">
+            <div class="intro">Earthy and Rich</div>
+        </div>
+    
+        <div class="info-1-container">
+            <p class="info-1-title">Why it’s perfect for fusilli</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>Fusilli’s twisted shape holds onto the creamy mushroom sauce, ensuring every bite is packed with flavor.</span>
+                </li>
+                <li class="info-1-description">
+                <span>he umami depth of mushrooms blends seamlessly with the silky cream base, creating a luxurious texture that coats fusilli beautifully.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="info-1-container">
+            <p class="info-1-title">Regional connection</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>Creamy mushroom sauces are common in northern Italian regions like Lombardy and Piedmont, where porcini mushrooms and dairy-rich sauces are widely used. While not tied to a single town, the combination of fresh, wild mushrooms and cream is a classic staple in Northern Italian home cooking.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="info-1-container">
+            <p class="info-1-title">Pro Tip – How to Enjoy It Best</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>🧄 Sauté mushrooms in butter & garlic  first to enhance their natural richness.</span>
+                </li>
+                <li class="info-1-description">
+                <span>🍷 A splash of white wine  adds depth and balances the creaminess.</span>
+                </li>
+                <li class="info-1-description">
+                <span>🧀 Finish with Parmesan  for extra richness and a nutty flavor boost.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+    </div>
+</div>
+<script>
+    var MapIcon = document.getElementById("icon-tomato");
+    
+    if (MapIcon) {
+        MapIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "fusilli.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

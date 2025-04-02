@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="arrabbiata.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+  	  	
+</head>
+<body>
+<div class="penne">
+    <!-- Arrabbiata Card -->
+    <div class="card">
+        <div class="card-title">Penne alla Vodka</div>
+        <div class="logo-intro">
+            <img src="images/vodka.png" alt="vodka" style="width: 130px; height: 130px;">
+            <div class="intro">Silky, Bold & Irresistible</div>
+        </div>
+    
+        <div class="info-1-container">
+            <p class="info-1-title">Why it’s perfect for penne</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>The smooth, creamy consistency coats penne inside and out, making every bite rich and flavorful.</span>
+                </li>
+                <li class="info-1-description">
+                <span>Penne’s al dente bite contrasts perfectly with the silky sauce, creating a satisfying mouthfeel.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="info-1-container">
+            <p class="info-1-title">Regional connection</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>While Penne alla Vodka is not a traditional Italian dish, it emerged in Italian-American cuisine and gained global recognition. Some stories trace its origins to Rome in the 1970s, where chefs experimented with vodka to create a smooth, emulsified tomato-cream sauce.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="info-1-container">
+            <p class="info-1-title">Pro Tip – How to Enjoy It Best</p>
+            <ul class="info-1">
+                <li class="info-1-description">
+                <span>🍸Don't skip the vodka! It enhances flavor but evaporates during cooking.</span>
+                </li>
+                <li class="info-1-description">
+                <span>🌶️ Add chili flakes for a subtle kick that balances the creaminess.</span>
+                </li>
+                <li class="info-1-description">
+                <span>🔥 Toss pasta directly in the sauce to let the starch help bind everything together.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+    </div>
+</div>
+<script>
+    var MapIcon = document.getElementById("icon-tomato");
+    
+    if (MapIcon) {
+        MapIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "penne.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

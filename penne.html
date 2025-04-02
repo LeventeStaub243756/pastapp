@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="penne.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+<div class="penne">
+    <div class="penne1">Penne</div>
+    <img class="penne-icon" alt="" src="images/penne.png">
+    <div class="sauce-pairings">Sauce Pairings</div>
+    <div class="sauce-cards">
+        <!-- Arrabbiata Card -->
+        <div class="card" id="Arrabbiata-card">
+            <div class="card-title">Arrabbiata Sauce</div>
+            <div class="card-content">
+	    		<img src="images/chili.png" alt="Chili" />
+                <div class="card-description">
+                    A bold, spicy tomato sauce that clings to Penne’s ridges for intense flavor.
+                </div>
+            </div>
+        </div>
+        <!-- Vodka sauce Card -->
+        <div class="card" id="Vodka-card">
+            <div class="card-title">Penne alla Vodka</div>
+            <div class="card-content">
+	    		<img src="images/vodka.png" alt="Vodka" />
+                <div class="card-description">
+                    A creamy, tomato-based sauce with a touch of vodka for balance.                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+        <div class="icon2" id="icon-map">
+			<img class="map-icon" alt="" src="images/map.png">
+		</div>
+    </div>
+    </div>
+</div>
+<script>
+    var MapIcon = document.getElementById("icon-map");
+    var ArrabbiataIcon = document.getElementById("Arrabbiata-card")
+    var VodkaIcon = document.getElementById("Vodka-card")
+
+    if (MapIcon) {
+        MapIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 400ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "penne_origin.html";
+            }, 400); // Wait for animation to complete before redirecting
+        });
+    }
+    if (ArrabbiataIcon) {
+        ArrabbiataIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "arrabbiata.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+    if (VodkaIcon) {
+        VodkaIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 200ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "vodka.html";
+            }, 200); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>

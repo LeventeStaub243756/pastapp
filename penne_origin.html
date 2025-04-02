@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="penne_origin.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@400&display=swap" />
+</head>
+<body>
+<div class="penne">
+    <div class="penne1">Penne</div>
+    <img class="penne-icon" alt="" src="images/italy_map_penne.png">
+    <div class="sauce-cards">
+        <!-- Penne origins card -->
+        <div class="card">
+            <div class="card-title">Penne origins</div>
+            <div class="card-content">
+                <div class="card-description">
+                    ​Penne is a type of pasta that originated in Italy, specifically from the Liguria region. The name "penne" is derived from the Italian word for "pen," referencing its distinctive quill-like shape with angled ends. This design was made possible in 1865 when Giovanni Battista Capurro, a pasta maker from San Martino d'Albaro (Genoa), patented a diagonal cutting machine that created this unique form without crushing the pasta.                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar">
+		<div class="icon1" id="icon-tomato">
+			<img class="tomato-sauce-icon" alt="" src="images/tomato_sauce.png">
+		</div>
+        <div class="icon2">
+			<img class="map-icon" alt="" src="images/map.png">
+		</div>
+    </div>
+</div>
+<script>
+    var tomatoSauceIcon = document.getElementById("icon-tomato");
+    
+    if (tomatoSauceIcon) {
+        tomatoSauceIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 400ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "penne.html";
+            }, 400); // Wait for animation to complete before redirecting
+        });
+    }
+</script></body>
+</html>
