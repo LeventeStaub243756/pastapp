@@ -174,8 +174,9 @@ body, html {
     color: #FFFFFF;
     font-family: 'Josefin Sans', sans-serif;
     position:absolute;
-    bottom: 400px;
+    bottom: 300px;
     text-align: center;
+    align-self: center;
 }
 
 /* Fade in and out animation */

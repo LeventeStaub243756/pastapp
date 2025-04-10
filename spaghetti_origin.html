@@ -32,11 +32,25 @@ Today, spaghetti remains a symbol of Italian culinary tradition, proving that si
         <div class="icon2">
 			<img class="map-icon" alt="" src="images/map.png">
 		</div>
+        <div class="icon3" id="icon-scan">
+			<img class="scan-icon" alt="" src="images/scan.png">
+		</div>
     </div>
 </div>
 <script>
     var tomatoSauceIcon = document.getElementById("icon-tomato");
-    
+    var ScanIcon = document.getElementById("icon-scan")
+    if (ScanIcon) {
+        ScanIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 400ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "home.html";
+            }, 400); // Wait for animation to complete before redirecting
+        });
+    }
     if (tomatoSauceIcon) {
         tomatoSauceIcon.addEventListener("click", function (e) {
             // Apply fade-out effect before redirecting
