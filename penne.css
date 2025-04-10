@@ -43,7 +43,7 @@
     align-items: center;
     width: 100%;
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 /* Generic Card Styling */
@@ -111,6 +111,13 @@
     object-fit: cover;
     z-index: 3;
 }
+.scan-icon {
+    width: 40px;
+    margin: 0 !important;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 3;
+}
 .icon1 {
     width: 60px;
     border-radius: 20px;
@@ -122,6 +129,16 @@
     justify-content: center;
     }
 .icon2 {
+    width: 60px;
+    border-radius: 20px;
+    height: 60px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+.icon3 {
     width: 60px;
     border-radius: 20px;
     height: 60px;

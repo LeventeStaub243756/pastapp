@@ -45,6 +45,9 @@
         <div class="icon2" id="icon-map">
 			<img class="map-icon" alt="" src="images/map.png">
 		</div>
+        <div class="icon3" id="icon-scan">
+			<img class="scan-icon" alt="" src="images/scan.png">
+		</div>
     </div>
     </div>
 </div>
@@ -52,6 +55,7 @@
     var MapIcon = document.getElementById("icon-map");
     var ArrabbiataIcon = document.getElementById("Arrabbiata-card")
     var VodkaIcon = document.getElementById("Vodka-card")
+    var ScanIcon = document.getElementById("icon-scan")
 
     if (MapIcon) {
         MapIcon.addEventListener("click", function (e) {
@@ -61,6 +65,17 @@
 
             setTimeout(function () {
                 window.location.href = "penne_origin.html";
+            }, 400); // Wait for animation to complete before redirecting
+        });
+    }
+    if (ScanIcon) {
+        ScanIcon.addEventListener("click", function (e) {
+            // Apply fade-out effect before redirecting
+            document.body.style.transition = "opacity 400ms ease-in";
+            document.body.style.opacity = "0";
+
+            setTimeout(function () {
+                window.location.href = "home.html";
             }, 400); // Wait for animation to complete before redirecting
         });
     }
