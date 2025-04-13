@@ -44,6 +44,7 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 60px;
+    max-width: 700px;
 }
 
 /* Generic Card Styling */
@@ -96,6 +97,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    max-width: 700px;
 }
 .tomato-sauce-icon {
     width: 50px;
