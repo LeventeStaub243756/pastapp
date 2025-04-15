@@ -21,6 +21,7 @@
     width: 100%;
     overflow: hidden;
     aspect-ratio: 375/473;
+    max-width: 700px;
 }
 
 .sauce-cards {
@@ -65,7 +66,7 @@
 
 .card-description {
     font-size: 24px;
-    max-width: 300px;
+    max-width: 700px;
 }
 
 /* Navbar Flexbox */
@@ -81,6 +82,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    max-width: 700px;
 }
 .tomato-sauce-icon {
     width: 50px;

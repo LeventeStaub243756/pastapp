@@ -29,11 +29,13 @@ function stopCameraStream() {
 
 function showPastaElementsAnimation() {
     const pastaImages = [
-        'images/penne_an.png', 
-        'images/fusilli_an.png', 
+        'images/penne_an.png',
+        'images/fusilli_an.png',
         'images/spaghetti_an.png'
     ];
     let index = 0;
+
+    const pastaElementsContainer = document.getElementById('pasta-elements-container');
 
     const interval = setInterval(() => {
         const pastaElement = document.createElement('img');

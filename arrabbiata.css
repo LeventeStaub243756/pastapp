@@ -95,6 +95,7 @@
     padding: 10px 80px;
     box-sizing: border-box;
     height: 80px;
+    max-width: 700px;
 }
 .tomato-sauce-icon {
     width: 50px;
