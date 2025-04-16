@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: var(--app-height);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   
@@ -23,7 +23,7 @@ body {
   }
   
   .app-name {
-    font-size: clamp(48px, 64px, 86px);
+    font-size: clamp(64px, 6.5vw, 86px);
     animation: slideIn 1s ease-in-out;
     color: #FFFFFF;
     margin:10px;

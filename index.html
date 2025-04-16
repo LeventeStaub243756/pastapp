@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Welcome</title>
   <link rel="stylesheet" href="index.css" />
 </head>
@@ -11,10 +11,19 @@
     <img src="images/logo.svg" alt="Logo" class="logo" />
     <h1 class="app-name">pastapp</h1>
   </div>
+  <script>
+    function setAppHeight() {
+      const doc = document.documentElement;
+      doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+    }
+  
+    window.addEventListener('load', setAppHeight);
+    window.addEventListener('resize', setAppHeight);
+  </script>
 </body>
 <script>
-    setTimeout(() => {
-        window.location.href = "home.html";
-    }, 3000);
+  setTimeout(() => {
+      window.location.href = "home.html";
+  }, 3000);
 </script>
 </html>
